@@ -1,0 +1,156 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box; /* Para que las cajas no se desborden unas con otras */
+}
+body{
+    font-family: 'Raleway', sans-serif;
+}
+a{
+    text-decoration: none; /* De este modo no debo quitarlo uno por uno */
+}
+.padre{
+    display: flex; /* 1- flex */
+    flex-flow:column nowrap; /*2- Para que todo se adapte segun el tamano establecido */
+}
+.margen-interno{/* Margen para que no se pegue a los costados de la pantalla, Lo aplicamos a cada padre MENU , SECTION Y FOOTER */
+ padding: 0px 50px;
+}
+.header{
+    background-position: center;
+    background-attachment: contain; /* Que este contenida en el header */
+    background-size: cover; /* Que no se agrande */
+    display: flex;
+    flex-flow: column nowrap;
+}
+.menu{ /* A1 */
+    background: rgba(0,0,0,.3); /* Color transparente */
+    display: flex; /* 1- FLEX PADRE Simplemente permito que puedan moverse*/
+    flex-flow: row nowrap; /* 2- FLEX PADRErow columnas, nowarp una misma linea de los elementos en contenedor PADRE */
+    height: 60px; /* Para darle mas altura */
+    align-items: center; /* 3- FLEX PADRE centrados verticalmente */
+    border-bottom: 1px solid rgba(255,255,255,.5); /* borde inferior del nav */
+    
+}
+.logo{
+ flex: 1 1 auto; /* 3- modifico los anchos en cada elemento HIJO */ 
+}
+/* .logo a{
+    color: #fff;
+    font-size: 30px; 
+}*/
+/* .logo a:hover{
+    color: #343434;
+} */
+.logo img{
+    width:30%;
+    margin: 0px;
+    margin-top: 4px;
+    flex: 1 1 auto;
+}  
+.nav{
+    flex: 1 1 80%;
+    display: flex; 
+}
+.nav a{
+    color: #fff;
+    font-size: 11px;
+    text-transform: uppercase;/*Para que sea en letras mayusculas */
+    padding: 0px 10px;
+    letter-spacing: 2px; /* Para separar letras en 2px c/u */
+    border-radius: 5px; 
+    padding: 10px;
+}
+.nav a:hover{
+    background: rgba(181,61,99,.5);
+    /* background:rgba(0,0,0,.5);  */
+}
+.social{
+    flex: 1 1 auto;
+    display: flex;
+}
+.social a{
+ font-size: 18px;
+ color: #fff;
+ padding: 0 5px;
+}
+.social a:hover{
+    color: #343434;
+}
+i{margin-right: 5px;}
+p{
+    padding: 10px;
+}
+.navegacion{
+    background: #627cb7;
+    flex: 1 1 100%; /* Para que el nav ocupe todo el ancho del contenedor en el ultimo parametro pongo 100% */
+    margin: 10px 10px 0 0px; /* Para que se alinea con aside */
+    align-items: center;
+    display: flex;
+
+}
+.navegacion a{
+    color: #fff;
+    font-size: 11px;
+    text-transform: uppercase;
+    padding: 0px 10px;
+    letter-spacing: 2px;
+    padding: 5px;
+    margin-left: 5px;
+}
+.navegacion a:hover{
+    background: #4b5f8d;
+}
+.footer{
+    background: #0e2654;
+    display: flex; /* 1 flex padre */
+    justify-content: center; /* 4- FLEX PADRE centrado horizontalmente */
+    margin-top: 10px;
+    padding: 10px;
+}
+.pie{
+    /* background-color: #feb72b; */
+    text-align: center;
+}
+.pie a{
+    color: #fff;
+    font-size: 11px;
+    text-transform: uppercase;
+    padding: 0px 10px;
+    letter-spacing: 2px;
+}
+
+form{
+    margin: 30px;
+    font-size: 14px;
+
+}
+
+.input{
+    width: 300px;
+ height: 30px;
+ margin:10px;
+}
+.input:hover{ background-color: gainsboro;
+border:none;}
+.textarea{
+ width: 300px;
+ height: 80px;
+ margin:10px;
+}
+.boton{
+    width: 300px;
+    height: 30px;
+    color:white;
+    background-color: rgb(15, 167, 53);
+    border: none;
+    margin-top: 15px;
+}
+.radio{
+    font-size: 10x;
+    padding: 15px;
+}
+.condiciones{
+    font-size: 10px;
+    margin: 10px;
+}

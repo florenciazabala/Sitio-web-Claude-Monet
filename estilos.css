@@ -1,0 +1,255 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box; /* Para que las cajas no se desborden unas con otras */
+}
+body{
+    font-family: 'Raleway', sans-serif;
+}
+a{
+    text-decoration: none; /* De este modo no debo quitarlo uno por uno */
+}
+.padre{
+    display: flex; /* 1- flex */
+    flex-flow:column nowrap; /*2- Para que todo se adapte segun el tamano establecido */
+}
+.margen-interno{/* Margen para que no se pegue a los costados de la pantalla, Lo aplicamos a cada padre MENU , SECTION Y FOOTER */
+ padding: 0px 50px;
+}
+.header{
+    background: url(IMAGENES/fondo-monet.jpg); /* s */
+    background-position: center;
+    background-attachment: contain; /* Que este contenida en el header */
+    background-size: cover; /* Que no se agrande */
+    display: flex;
+    flex-flow: column nowrap;
+}
+.menu{ /* A1 */
+    background: rgba(0,0,0,.3); /* Color transparente */
+    display: flex; /* 1- FLEX PADRE Simplemente permito que puedan moverse*/
+    flex-flow: row nowrap; /* 2- FLEX PADRErow columnas, nowarp una misma linea de los elementos en contenedor PADRE */
+    height: 60px; /* Para darle mas altura */
+    align-items: center; /* 3- FLEX PADRE centrados verticalmente */
+    border-bottom: 1px solid rgba(255,255,255,.5); /* borde inferior del nav */
+    
+}
+.logo{
+ flex: 1 1 auto; /* 3- modifico los anchos en cada elemento HIJO */ 
+}
+/* .logo a{
+    color: #fff;
+    font-size: 30px; 
+}*/
+/* .logo a:hover{
+    color: #343434;
+} */
+.logo img{
+    width:30%;
+    margin: 0px;
+    flex: 1 1 auto;
+}  
+.nav{
+    flex: 1 1 80%;
+    display: flex; 
+}
+.nav a{
+    color: #fff;
+    font-size: 11px;
+    text-transform: uppercase;/*Para que sea en letras mayusculas */
+    padding: 0px 10px;
+    letter-spacing: 2px; /* Para separar letras en 2px c/u */
+    border-radius: 5px; 
+    padding: 10px;
+}
+.nav a:hover{
+    background: rgba(181,61,99,.5);
+    /* background:rgba(0,0,0,.5);  */
+}
+.social{
+    flex: 1 1 auto;
+    display: flex;
+}
+.social a{
+ font-size: 18px;
+ color: #fff;
+ padding: 0 5px;
+}
+.social a:hover{
+    color: #343434;
+}
+i{margin-right: 5px;}
+.texto-principal{
+ /* background: #f37121; */
+ height: 580px; /* Para que sea mas alto y se ve mas la foto */
+ display: flex; /* Para poder mover la caja de texto */
+ align-items: center; /* Para centrar texto verticalmente */
+}  
+
+h1{
+ font-family: 'Raleway' , sans-serif;
+ font-size: 40px;
+ color:rgb(230, 221, 221);
+ font-weight: 400; /* Light */
+ text-align: center; /* Centrado */
+ /* line-height: 1.6; */ /* Altura de las letras */
+ padding: 30px;
+ text-transform: uppercase;
+ letter-spacing: 1px;
+ word-spacing: 2px;
+ line-height: 60px;
+ /* width: 1000px; */
+}
+.section{
+ background: #F7F7F7;
+ display: flex;
+ /* flex-flow: row nowrap; */
+}
+.articulos{
+    text-align: justify;
+ background: #f7f7f7;
+ flex: 2 1 70%; /* 3- FLEX como elemento hijo dentro de sction */
+ display: flex; /* 1- FLEX como elemento padre de los articulos */
+ flex-flow: row wrap; /* 2- FLEX padre, row:columna, warp: indica que si los elementos son muy grandes y no alcancanz a colocarse todos en una misma fila los va acomodando debajo, para que funcione debo establecer un ancho a los hijos */
+}
+.article{
+    /* flex: 1 1 30%; *//* El 40% para que se posicionen en 2 filas */
+    color: #444;
+    font-size: 13px;
+    letter-spacing: 1px;
+
+    margin:30px 30px 0 0px;
+    flex: 1 1 45%;
+    background: #ececec;
+    padding: 5px 10px 5px 5px;
+}
+.article img{
+    width: 100%; /* De esta forma toma el 100% del contenedor */
+}
+.article a{
+    color: #fff;
+    font-size: 13px;
+    border-radius: 3px;
+    padding: 10px;
+    background: #000;
+    margin: 5px;
+    display: inline-block; /* Para que lo tome como bloque y se posicione debako del texto */
+}
+.article a:hover{
+    background: #546cc3;
+}
+h3{
+ color:#fff;
+ font-size: 13px;
+ padding: 10px 0px;
+ margin-top: -80px; /* De esta forma se desplaza hacia arriba */
+ padding-left: 10px;
+}
+h2{
+ font-size: 25px;
+ text-transform: uppercase;
+ padding: 0px 0px 10px 0px;
+ color:#fff;
+ padding-left: 10px;
+}
+p{
+    padding: 10px;
+}
+.navegacion{
+    background: #627cb7;
+    flex: 1 1 100%; /* Para que el nav ocupe todo el ancho del contenedor en el ultimo parametro pongo 100% */
+    margin: 10px 10px 0 0px; /* Para que se alinea con aside */
+    align-items: center;
+    display: flex;
+
+}
+.navegacion a{
+    color: #fff;
+    font-size: 11px;
+    text-transform: uppercase;
+    padding: 0px 10px;
+    letter-spacing: 2px;
+    padding: 5px;
+    margin-left: 5px;
+}
+.navegacion a:hover{
+    background: #4b5f8d;
+}
+.aside{
+ /* background: #a8df65; */
+ flex: 1 1 30%;
+ margin: 30px 5px 10px 0px;
+ /* background: #d9d9da; */
+ background: #e6d5ca;
+ padding: 15px 15px 45px 15px;
+}
+.aside img{
+ width: 100%; /* Para que abarque todo el contenedor */
+}
+h4{
+   /* background: #c1622a; */
+   background: #2a4112; 
+   color: #fff;
+   padding: 10px;
+   text-transform: uppercase;
+}
+
+.footer{
+    background: #0e2654;
+    display: flex; /* 1 flex padre */
+    justify-content: center; /* 4- FLEX PADRE centrado horizontalmente */
+    margin-top: 10px;
+    padding: 10px;
+}
+.pie{
+    /* background-color: #feb72b; */
+    text-align: center;
+}
+.pie a{
+    color: #fff;
+    font-size: 11px;
+    text-transform: uppercase;
+    padding: 0px 10px;
+    letter-spacing: 2px;
+}
+
+@media all and (max-width: 1120px){ /* de 0 a 800px */
+     .section{
+         flex-direction: column; /* Para que aside pase debajo */
+        }
+     .menu{
+         flex-direction: column;
+         height: auto; /* Como esatableci arriba un alto definido de 100px los elementos quedaban por fuera */
+        }
+     .aside{
+         display: flex; /* Para que publicidades dse posicionen una al lado de la otra */
+         justify-content: center; /*Alineacion horizontal al centro */
+        }
+        h1{
+            font-size: 15px; /* Achico tamnano de letra del texto y altura */
+        }
+        .texto-principal{
+            height: 450px;
+        }
+}
+@media all and (max-width: 762px){
+    .articulos{
+      flex-direction: column;
+    }
+}
+@media all and (max-width:650px){
+    .off{
+        display: none; /* Desaparecen textos */
+    }
+    .nav a{
+        font-size: 20px;
+    }
+}
+
+@media all and (max-width: 400px){
+       .aside{
+           flex-direction: column; /* Para que posicione articulos uno debajo del otro */
+        }
+}
+
+
+
