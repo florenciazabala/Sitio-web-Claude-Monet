@@ -1,21 +1,23 @@
 <!DOCTYPE html>
-<html lang="es"><!-- Recordar cambiar a espanol -->
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" ><!-- Esta etiqueta ayuda a que el sitio sea responsive -->
     <script src="https://kit.fontawesome.com/b1f327edcd.js" crossorigin="anonymous"></script> <!-- FOUNT AWESONE ICONS -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700&family=Raleway:ital,wght@0,200;0,500;0,600;0,700;1,300;1,400&display=swap" rel="stylesheet"> <!-- GOOGLE FONTS -->
-    <link rel="stylesheet" href="estilos.css"/> <!-- Los link van en este orden porque css es lo ultimo que lee -->
+    <link rel="stylesheet" href="CSS/estilos.css"/> <!-- Los link van en este orden porque css es lo ultimo que lee -->
 
-    <title>Claude Monet</title>
+    <title> Claude Monet</title>
+    <link rel="icon" href=""> 
 </head>
 <body>
-    <div class="padre"> <!-- 1 -->
-        <header class="header"> <!-- 1-A -->
-            <div class="menu margen-interno"> <!-- A1 -->
+    <div class="padre"> 
+        <header class="header"> 
+            <div class="menu margen-interno"> 
+                <!-- NAVBAR -->
                 <div class="logo">
                     <a href="index.html"><img src="IMAGENES/logo-monet3.png"></a>
-                </i></div>
+                </div>
                 <div class="nav">
                     <a href="index.html"><i class="fas fa-home"></i><span class="off">Inicio</span></a> <!-- Link logotipos fount awsome -->
                     <a href="Biografia.html"><i class="fas fa-user"></i><span class="off">Acerca de mi</span></a>
@@ -30,40 +32,43 @@
                 </div>
             
             </div>
+            <!-- CABECERA- IMAGEN PRINCIPAL -->
             <div class="texto-principal margen-interno"> <!-- A2 -->
                 <h1 class="frase"><i class="fas fa-quote-left"></i>  Eventualmente, mis ojos se abrieron y realmente entendí la naturaleza. Aprendí a amar al mismo tiempo  <i class="fas fa-quote-right"></i></h1>
             </div>
         </header>
         <section class="section margen-interno"> <!-- 1-B -->
+            <!-- ARTICULOS -->
             <div class="articulos">
                 <article class="article">
-                    <img src="IMAGENES/Exposicion.png" alt="Imagen no disponible"> <!-- Alt es un texto que apareceria en caso de que la imagen no este disponible -->
+                    <img src="IMAGENES/articulo-1.jpg" alt="Imagen no disponible"> <!-- Alt es un texto que apareceria en caso de que la imagen no este disponible -->
                     <h3>29 de Julio de 2020</h3>
                     <h2>Exposicion de Paris</h2>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur laudantium corrupti tenetur dolores magni natus impedit neque, itaque, iusto asperiores dolorum quos. Sequi odio dignissimos libero quisquam, porro autem vitae!</p>
                     <a href="#">Leer mas...</a>
                 </article>
                 <article class="article">
-                    <img src="IMAGENES/Taller2.jpg" alt="Imagen no disponible"> 
+                    <img src="IMAGENES/articulo-2.jpg" alt="Imagen no disponible"> 
                     <h3>29 de Julio de 2020</h3>
                     <h2>Taller</h2>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur laudantium corrupti tenetur dolores magni natus impedit neque, itaque, iusto asperiores dolorum quos. Sequi odio dignissimos libero quisquam, porro autem vitae!</p>
                     <a href="#">Leer mas...</a>
                 </article>
                 <article class="article">
-                    <img src="IMAGENES/Fondo3.jpg" alt="Imagen no disponible"> <!-- Alt es un texto que apareceria en caso de que la imagen no este disponible -->
+                    <img src="IMAGENES/articulo-3.jpg" alt="Imagen no disponible"> <!-- Alt es un texto que apareceria en caso de que la imagen no este disponible -->
                     <h3>29 de Julio de 2020</h3>
                     <h2>Analisis de su obra</h2>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur laudantium corrupti tenetur dolores magni natus impedit neque, itaque, iusto asperiores dolorum quos. Sequi odio dignissimos libero quisquam, porro autem vitae!</p>
                     <a href="#">Leer mas...</a>
                 </article>
                 <article class="article">
-                    <img src="IMAGENES/2.jpg" alt="Imagen no disponible"> <!-- Alt es un texto que apareceria en caso de que la imagen no este disponible -->
+                    <img src="IMAGENES/articulo-4.jpg" alt="Imagen no disponible"> <!-- Alt es un texto que apareceria en caso de que la imagen no este disponible -->
                     <h3>29 de Julio de 2020</h3>
-                    <h2>Titulo de la noticia</h2>
+                    <h2>Muestras actuales</h2>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur laudantium corrupti tenetur dolores magni natus impedit neque, itaque, iusto asperiores dolorum quos. Sequi odio dignissimos libero quisquam, porro autem vitae!</p>
                     <a href="#">Leer mas...</a>
                 </article>
+                <!-- MENU DE NAVEGACION NOTICIAS -->
                 <nav class="navegacion">
                     <a href="#">Inicio</a>
                     <a href="#">1</a>
@@ -73,21 +78,23 @@
                     <a href="#">Final</a>
                 </nav>
             </div>
+            <!-- ASIDE PUBLICIDAD -->
             <aside class="aside">
                 <div class="publicidad">
                     <h4>Aside</h1>
-                    <img src="IMAGENES/2.jpg" alt="Imagen no disponible">
+                    <img src="IMAGENES/Aside.jpg" alt="Imagen no disponible">
                 </div>
                 <div class="publicidad">
                     <h4>Aside</h1>
-                    <img src="IMAGENES/2.jpg" alt="Imagen no disponible">
+                    <img src="IMAGENES/Aside.jpg" alt="Imagen no disponible">
                 </div>
                 <div class="publicidad">
                     <h4>Aside</h1>
-                    <img src="IMAGENES/2.jpg" alt="Imagen no disponible">
+                    <img src="IMAGENES/Aside.jpg" alt="Imagen no disponible">
                 </div>
             </aside>
         </section>
+        <!-- FOOTER -->
         <footer class="footer margen-interno"><!-- 1-C -->
             <nav class="pie">
                 <a href="mailto:claudemonte@gmail.com?Subjet:Solicitud de informacion">Contacto: claudemonet@gmail.com</a>

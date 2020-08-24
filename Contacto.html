@@ -6,7 +6,7 @@
     <title>Contacto</title>
     <script src="https://kit.fontawesome.com/b1f327edcd.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700&family=Raleway:ital,wght@0,200;0,500;0,600;0,700;1,300;1,400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="estiloscontacto.css">
+    <link rel="stylesheet" href="CSS/estiloscontacto.css">
 </head>
 <body>
     <header class="header"> <!-- 1-A -->
@@ -30,15 +30,20 @@
         </div>
     </header> 
     <main>
-        <section>
+        <section class="seccion"> 
+            <aside>
+                <h2>FORMULARIO DE CONTACTO</h2>
+                <hr>
+                <p>Para mayor informacion complete el formulario y en breve nos contactaremos.</p>
+            </aside>
             <form action="codigo.php" method="POST" enctype="multipart/form-data">
                 <label>Nombre<br><input type="text" name="nombre" required autofocus class="input"></label><br>
                 <label">Apellido<br><input type="text" name="Apellido" class="input"> </label><br>
                 <label>Email<br><input type="email" placeholder="mail@dominio.com" multiple required class="input"></label><br>
                 <label>Numero de telefono<br><input type="text" class="input"></label><br>
                 <label>Comentarios<br><textarea name="comentarios" id="" class="textarea" maxlength="140"></textarea></label><br>
-                <label>Archivos adjuntos <br> <input type="file" name="archivos"multiple required></label><br>
-                <p>Forma de envio</p>
+                <label>Archivos adjuntos <br> <input type="file" name="archivos"multiple required></label><br><br>
+                <label>Forma de envio<label><br>
                 <label class="radio">Envio a domicilio <input type="radio" name="envio" value="Ddomicilio" required checked></label> 
                 <label class="radio">Retiro en tienda <input type="radio" name="envio" value="tienda" required></label><br>
                 <br>

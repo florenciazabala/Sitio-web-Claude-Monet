@@ -35,13 +35,7 @@ a{
 .logo{
  flex: 1 1 auto; /* 3- modifico los anchos en cada elemento HIJO */ 
 }
-/* .logo a{
-    color: #fff;
-    font-size: 30px; 
-}*/
-/* .logo a:hover{
-    color: #343434;
-} */
+
 .logo img{
     width:30%;
     margin: 0px;
@@ -81,26 +75,7 @@ i{margin-right: 5px;}
 p{
     padding: 10px;
 }
-.navegacion{
-    background: #627cb7;
-    flex: 1 1 100%; /* Para que el nav ocupe todo el ancho del contenedor en el ultimo parametro pongo 100% */
-    margin: 10px 10px 0 0px; /* Para que se alinea con aside */
-    align-items: center;
-    display: flex;
 
-}
-.navegacion a{
-    color: #fff;
-    font-size: 11px;
-    text-transform: uppercase;
-    padding: 0px 10px;
-    letter-spacing: 2px;
-    padding: 5px;
-    margin-left: 5px;
-}
-.navegacion a:hover{
-    background: #4b5f8d;
-}
 .aside{
  /* background: #a8df65; */
  flex: 1 1 30%;
@@ -132,7 +107,8 @@ p{
 
 h3{ text-transform: uppercase;
 padding: 10px;
-margin: 5px;}
+margin: 5px;
+}
 p{text-align: justify;
 margin: 5px;
 padding: 10px;
@@ -196,10 +172,24 @@ th{
 }
 
 .icono{width: 20%;}
-.volver{align-content: right; 
-color:blue;
-font-size:12px;
-color: white;
-background-color: rgb(165, 113, 148);
-padding: 5px;
-border-radius: 3px;}
+
+.btn{ 
+
+  background-color: rgb(37, 43, 41);
+  border-radius: 3px;
+  display: table;
+  align-content: center;
+  
+  
+}
+
+
+.volver{
+    text-decoration: none;
+    font-size:12px;
+    color: white;
+    padding: 5px;
+    display: table-cell;
+    text-align: center;
+}
+

@@ -77,40 +77,29 @@ a{
 .social a:hover{
     color: #343434;
 }
-i{margin-right: 5px;}
-p{
-    padding: 10px;
+i{margin-right: 5px;
 }
-.navegacion{
-    background: #627cb7;
-    flex: 1 1 100%; /* Para que el nav ocupe todo el ancho del contenedor en el ultimo parametro pongo 100% */
-    margin: 10px 10px 0 0px; /* Para que se alinea con aside */
-    align-items: center;
-    display: flex;
 
-}
-.navegacion a{
-    color: #fff;
-    font-size: 11px;
-    text-transform: uppercase;
-    padding: 0px 10px;
-    letter-spacing: 2px;
-    padding: 5px;
-    margin-left: 5px;
-}
-.navegacion a:hover{
-    background: #4b5f8d;
+
+.aside{
+ /* background: #a8df65; */
+ flex: 1 1 30%;
+ margin: 30px 5px 10px 0px;
+ /* background: #d9d9da; */
+ background: #e6d5ca;
+ padding: 15px 15px 45px 15px;
 }
 .footer{
     background: #0e2654;
     display: flex; /* 1 flex padre */
     justify-content: center; /* 4- FLEX PADRE centrado horizontalmente */
-    margin-top: 10px;
+    margin: 0;
     padding: 10px;
 }
 .pie{
     /* background-color: #feb72b; */
     text-align: center;
+    margin: 0;
 }
 .pie a{
     color: #fff;
@@ -120,37 +109,110 @@ p{
     letter-spacing: 2px;
 }
 
-form{
-    margin: 30px;
+
+
+.section{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    margin: 30 px;
+}
+
+.articulo{
+    flex: 1 1 5;
+    padding: 20px;
+    margin-left: 10px;
+    line-height: 12px;
+}
+
+iframe{ 
+    width: 850px; 
+    height: 600px; 
+    border: none; 
+    border-radius: 5px;
+    margin-top: 22px;
+}
+
+
+/*ASIDE- EFECTO CONTENIDO TRASLADABLE */
+.center{
+    display: flex; /* FLEXBOX */
+    justify-content: center;
+    align-items: center;
+}
+.main{
+    width: 100%;
+    height: 100vh;
+}
+.box{
+    width: 400px;
+    height: 600Px;
+    background-color:/*  rgb(196, 181, 196) */ #70b3a7;
+    color: black;
+    border-radius: 5px;
+    flex-direction: column; /* FLEXBOX */
+    position: relative; /* ATRIBUTO EFECTO */
+    overflow: hidden; /* ATRIBUTO EFECTO- OCULTO */
+    
+}
+.box a{
+    color: black;
+}
+.box img{
+    position: absolute; /* ATRIBUTO EFECTO */
+    top: 0;
+    left: 0;
+    width: 400px; /* = medida que el box */
+    height: 600px;
+    transition: all 1s; /* Velocidad de desplazamiento de la imagen  */
+    
+}
+
+.box:hover img{
+
+    width: 190px;
+    height: 190px;
+    overflow: hidden;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+   
+}
+/* .container:hover{
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    margin-top: -30px;
+} */
+.info{
+    padding: 22px;
+    position: relative;
+    overflow: hidden;
+}
+
+.info h3{
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 18px;
+  transform: translateY(410px); /* ATRIBUTO EFECTO, cuanto mayor este valor iba desapareciendo el texto posicionado encima de la imagen */
+  transition: all 1.2s; /* ATRIBUTO EFECTO, el valor debe ser menos que el de los p para que al deslizarse no se superpongan */
+}
+
+.info P{
+    text-align: justify;
+    line-height: 20px;
+    padding:0;
     font-size: 14px;
-
+    transform: translateY(400px); /* ATRIBUTO EFECTO */
+    transition: all 1.2s; /* ATRIBUTO EFECTO */ 
 }
 
-.input{
-    width: 300px;
- height: 30px;
- margin:10px;
-}
-.input:hover{ background-color: gainsboro;
-border:none;}
-.textarea{
- width: 300px;
- height: 80px;
- margin:10px;
-}
-.boton{
-    width: 300px;
-    height: 30px;
-    color:white;
-    background-color: rgb(15, 167, 53);
-    border: none;
-    margin-top: 15px;
-}
-.radio{
-    font-size: 10x;
-    padding: 15px;
-}
-.condiciones{
-    font-size: 10px;
-    margin: 10px;
-}
+
+.info:hover h3{transform: translateY(16px);} /* ATRIBUTO EFECTO */
+.info:hover p{transform: translateY(16px);} /* ATRIBUTO EFECTO */
+
+
+

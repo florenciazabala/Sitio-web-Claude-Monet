@@ -77,51 +77,21 @@ a{
 .social a:hover{
     color: #343434;
 }
-i{margin-right: 5px;
-}
+i{margin-right: 5px;}
 p{
     padding: 10px;
-    line-height: 28px;
 }
-.navegacion{
-    background: #627cb7;
-    flex: 1 1 100%; /* Para que el nav ocupe todo el ancho del contenedor en el ultimo parametro pongo 100% */
-    margin: 10px 10px 0 0px; /* Para que se alinea con aside */
-    align-items: center;
-    display: flex;
 
-}
-.navegacion a{
-    color: #fff;
-    font-size: 11px;
-    text-transform: uppercase;
-    padding: 0px 10px;
-    letter-spacing: 2px;
-    padding: 5px;
-    margin-left: 5px;
-}
-.navegacion a:hover{
-    background: #4b5f8d;
-}
-.aside{
- /* background: #a8df65; */
- flex: 1 1 30%;
- margin: 30px 5px 10px 0px;
- /* background: #d9d9da; */
- background: #e6d5ca;
- padding: 15px 15px 45px 15px;
-}
 .footer{
     background: #0e2654;
     display: flex; /* 1 flex padre */
     justify-content: center; /* 4- FLEX PADRE centrado horizontalmente */
-    margin: 0;
+    margin-top: 10px;
     padding: 10px;
 }
 .pie{
     /* background-color: #feb72b; */
     text-align: center;
-    margin: 0;
 }
 .pie a{
     color: #fff;
@@ -131,38 +101,58 @@ p{
     letter-spacing: 2px;
 }
 
-h2{margin: 20px;
-text-transform: uppercase;
-text-align: center;}
-
-h3{ text-transform: uppercase;
-    font-size: 20;
-}
-p{text-align: justify;
-    padding:0;
-}
-.section{
-    display: flex;
-    
-    flex-wrap: nowrap;
-    flex-direction: row;
-    margin: 30 px;
-
-    
-    
-}
-
-.articulo{
-    flex: 1 1 5;
-    padding: 20px;
-   
-    
-}
-.datos{ 
-    background-color: rgb(228, 217, 228);
+form{
     margin: 30px;
+    font-size: 14px;
+
 }
 
-iframe{ width: 900px; height: 600px; border: none; margin: 30px}
+.input{
+    width: 300px;
+ height: 30px;
+ margin:10px;
+}
+.input:hover{ background-color: gainsboro;
+border:none;}
+.textarea{
+ width: 300px;
+ height: 80px;
+ margin:10px;
+}
+.boton{
+    width: 300px;
+    height: 30px;
+    color:white;
+    background-color: rgb(15, 167, 53);
+    border: none;
+    margin-top: 15px;
+}
+.boton:hover{
+    background-color: rgb(15, 111, 167);
+}
+.radio{
+    font-size: 10x;
+    padding: 15px;
+}
+.condiciones{
+    font-size: 10px;
+    margin: 10px;
+}
 
+.seccion{
+    display: flex;
+    flex-flow: row;
+}
 
+aside{flex: 1 1 auto;}
+form{flex: 2 1 auto;
+margin: 40px;}
+
+h2{ margin-top:40px;
+    margin-left: 40px;
+    margin-right: 40px;
+font-style: italic;}
+hr{margin-left: 40px;
+margin-right: 40px;}
+
+p{ margin: 40px;}
